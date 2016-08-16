@@ -1,30 +1,349 @@
----
-layout: null
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml" />
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% for post in site.posts limit:10 %}
+    <title>Grimoire</title>
+    <description>A searchable D&amp;D 5e spell list, sorted by class and level.</description>
+    <link>http://ephe.github.io/grimoire/</link>
+    <atom:link href="http://ephe.github.io/grimoire/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Tue, 16 Aug 2016 16:33:26 -0700</pubDate>
+    <lastBuildDate>Tue, 16 Aug 2016 16:33:26 -0700</lastBuildDate>
+    <generator>Jekyll v3.0.1</generator>
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
-        {% for tag in post.tags %}
-        <category>{{ tag | xml_escape }}</category>
-        {% endfor %}
-        {% for cat in post.categories %}
-        <category>{{ cat | xml_escape }}</category>
-        {% endfor %}
+        <title>Sword Burst</title>
+        <description>&lt;p&gt;&lt;strong&gt;Conjuration cantrip&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Casting Time&lt;/strong&gt;: 1 action&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Range&lt;/strong&gt;: 5 feet&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Components&lt;/strong&gt;: V&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Duration&lt;/strong&gt;: Instantaneous&lt;/p&gt;
+
+&lt;p&gt;You create a momentary circle of spectral blades that sweep around you. Each creature within range, other than you, must succeed on a Dexterity saving throw or take 1d6 force damage.&lt;/p&gt;
+
+&lt;p&gt;This spell’s damage increases by 1d6 when you reach 5th level (2d6), 11th level (3d6), and 17th level (4d6).&lt;/p&gt;
+</description>
+        <pubDate>Mon, 07 Dec 2015 00:00:00 -0800</pubDate>
+        <link>http://ephe.github.io/grimoire/spells/sword-burst</link>
+        <guid isPermaLink="true">http://ephe.github.io/grimoire/spells/sword-burst</guid>
+        
+        <category>sorcerer</category>
+        
+        <category>warlock</category>
+        
+        <category>wizard</category>
+        
+        <category>cantrip</category>
+        
+        <category>conjuration</category>
+        
+        
+        <category>spells</category>
+        
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>Lightning Lure</title>
+        <description>&lt;p&gt;&lt;strong&gt;Evocation cantrip&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Casting Time&lt;/strong&gt;: 1 action&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Range&lt;/strong&gt;: 15 feet&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Components&lt;/strong&gt;: V&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Duration&lt;/strong&gt;: Instantaneous&lt;/p&gt;
+
+&lt;p&gt;You create a lash of lightning energy that strikes at one creature of your choice that you can see within range. The target must succeed on a Strength saving throw or be pulled up to 10 feet in a straight line toward you and then take 1d8 lightning damage if it is within 5 feet of you.&lt;/p&gt;
+
+&lt;p&gt;This spell’s damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8).&lt;/p&gt;
+</description>
+        <pubDate>Mon, 07 Dec 2015 00:00:00 -0800</pubDate>
+        <link>http://ephe.github.io/grimoire/spells/lightning-lure</link>
+        <guid isPermaLink="true">http://ephe.github.io/grimoire/spells/lightning-lure</guid>
+        
+        <category>sorcerer</category>
+        
+        <category>warlock</category>
+        
+        <category>wizard</category>
+        
+        <category>cantrip</category>
+        
+        <category>evocation</category>
+        
+        
+        <category>spells</category>
+        
+      </item>
+    
+      <item>
+        <title>Green-Flame Blade</title>
+        <description>&lt;p&gt;&lt;strong&gt;Evocation cantrip&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Casting Time&lt;/strong&gt;: 1 action&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Range&lt;/strong&gt;: 5 feet&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Components&lt;/strong&gt;: V, M (a weapon)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Duration&lt;/strong&gt;: Instantaneous&lt;/p&gt;
+
+&lt;p&gt;As part of the action used to cast this spell, you must make a melee attack with a weapon against one creature within the spell’s range, otherwise the spell fails. On a hit, the target suffers the attack’s normal effects, and green fire leaps from the target to a different creature of your choice that you can see within 5 feet of it. The second creature takes fire damage equal to your spellcasting modifier.&lt;/p&gt;
+
+&lt;p&gt;This spell’s damage increases when you reach higher levels. At 5th level, the melee attack deals an extra 1d8 fire damage to the target, and the fire damage to the second creature increases to 1d8 + your spellcasting ability modifier. Both damage rolls increase by 1d8 at 11th level and 17th level.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 07 Dec 2015 00:00:00 -0800</pubDate>
+        <link>http://ephe.github.io/grimoire/spells/green-flame-blade</link>
+        <guid isPermaLink="true">http://ephe.github.io/grimoire/spells/green-flame-blade</guid>
+        
+        <category>sorcerer</category>
+        
+        <category>warlock</category>
+        
+        <category>wizard</category>
+        
+        <category>cantrip</category>
+        
+        <category>evocation</category>
+        
+        
+        <category>spells</category>
+        
+      </item>
+    
+      <item>
+        <title>Booming Blade</title>
+        <description>&lt;p&gt;&lt;strong&gt;Evocation cantrip&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Casting Time&lt;/strong&gt;: 1 action&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Range&lt;/strong&gt;: 5 feet&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Components&lt;/strong&gt;: V, M (a weapon)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Duration&lt;/strong&gt;: 1 round&lt;/p&gt;
+
+&lt;p&gt;As part of the action used to cast this spell, you must make a melee attack with a weapon against one creature within the spell’s range, otherwise the spell fails. On a hit, the target suffers the attack’s normal effects, and it becomes sheathed in booming energy until the start of your next turn. If the target willingly moves before then, it immediately takes 1d8 thunder damage, and the spell ends.&lt;/p&gt;
+
+&lt;p&gt;This spell’s damage increases when you reach higher levels. At 5th level, the melee attack deals an extra 1d8 thunder damage to the target, and the damage the target takes for moving increases to 2d8. Both damage rolls increase by 1d8 at 11th level and 17th level.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 07 Dec 2015 00:00:00 -0800</pubDate>
+        <link>http://ephe.github.io/grimoire/spells/booming-blade</link>
+        <guid isPermaLink="true">http://ephe.github.io/grimoire/spells/booming-blade</guid>
+        
+        <category>sorcerer</category>
+        
+        <category>warlock</category>
+        
+        <category>wizard</category>
+        
+        <category>cantrip</category>
+        
+        <category>evocation</category>
+        
+        
+        <category>spells</category>
+        
+      </item>
+    
+      <item>
+        <title>Wall of Sand</title>
+        <description>&lt;p&gt;&lt;strong&gt;3rd-level evocation&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Casting Time&lt;/strong&gt;: 1 action&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Range&lt;/strong&gt;: 90 feet&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Components&lt;/strong&gt;: V, S, M (a handful of sand)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Duration&lt;/strong&gt;: Concentration, up to 10 minutes&lt;/p&gt;
+
+&lt;p&gt;You conjure up a wall of swirling sand on the ground at a point you can see within range. You can make the wall up to 30 feet long, 10 feet high, and 10 feet thick, and it vanishes when the spell ends. It blocks line of sight but not movement. A creature is blinded while in the wall’s space and must spend 3 feet of movement for every 1 foot it moves there.&lt;/p&gt;
+</description>
+        <pubDate>Sun, 22 Nov 2015 00:00:00 -0800</pubDate>
+        <link>http://ephe.github.io/grimoire/spells/wall-of-sand</link>
+        <guid isPermaLink="true">http://ephe.github.io/grimoire/spells/wall-of-sand</guid>
+        
+        <category>wizard</category>
+        
+        <category>level3</category>
+        
+        <category>evocation</category>
+        
+        
+        <category>spells</category>
+        
+      </item>
+    
+      <item>
+        <title>Vitriolic Sphere</title>
+        <description>&lt;p&gt;&lt;strong&gt;4th-level evocation&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Casting Time&lt;/strong&gt;: 1 action&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Range&lt;/strong&gt;: 150 feet&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Components&lt;/strong&gt;: V, S, M (a drop of giant slug bile)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Duration&lt;/strong&gt;: Instantaneous&lt;/p&gt;
+
+&lt;p&gt;You point at a place within range, and a glowing 1-foot ball of emerald acid streaks there and explodes in a 20-foot radius. Each creature in that area must make a Dexterity saving throw. On a failed save, a creature takes 10d4 acid damage and 5d4 acid damage at the end of its next turn. On a successful save, a creature takes half the initial damage and no damage at the end of its next turn.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;At Higher Levels.&lt;/strong&gt; When you cast this spell using a spell slot of 5th level or higher, the initial damage increases by 2d4 for each slot level above 4th.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 20 Nov 2015 00:00:00 -0800</pubDate>
+        <link>http://ephe.github.io/grimoire/spells/vitriolic-sphere</link>
+        <guid isPermaLink="true">http://ephe.github.io/grimoire/spells/vitriolic-sphere</guid>
+        
+        <category>sorcerer</category>
+        
+        <category>wizard</category>
+        
+        <category>level4</category>
+        
+        <category>evocation</category>
+        
+        
+        <category>spells</category>
+        
+      </item>
+    
+      <item>
+        <title>Storm Sphere</title>
+        <description>&lt;p&gt;&lt;strong&gt;4th-level evocation&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Casting Time&lt;/strong&gt;: 1 action&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Range&lt;/strong&gt;: 150 feet&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Components&lt;/strong&gt;: V, S&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Duration&lt;/strong&gt;: Concentration, up to 1 minute&lt;/p&gt;
+
+&lt;p&gt;A 20-foot-radius sphere of whirling air springs into existence centered on a point you choose within range. The sphere remains for the spell’s duration. Each creature in the sphere when it appears or that ends its turn there must succeed on a Strength saving throw or take 2d6 bludgeoning damage. The sphere’s space is difficult terrain.&lt;/p&gt;
+
+&lt;p&gt;Until the spell ends, you can use a bonus action on each of your turns to cause a bolt of lightning to leap from the center of the sphere toward one creature you choose within 60 feet of the center. Make a ranged spell attack. You have advantage on the attack roll if the target is in the sphere. On a hit, the target takes 4d6 lightning damage.&lt;/p&gt;
+
+&lt;p&gt;Creatures within 30 feet of the sphere have disadvantage on Wisdom (Perception) checks made to listen.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;At Higher Levels.&lt;/strong&gt; When you cast this spell using a spell slot of 5th level or higher, the damage increases for each of its effects by 1d6 for each slot level above 4th.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 20 Nov 2015 00:00:00 -0800</pubDate>
+        <link>http://ephe.github.io/grimoire/spells/storm-sphere</link>
+        <guid isPermaLink="true">http://ephe.github.io/grimoire/spells/storm-sphere</guid>
+        
+        <category>sorcerer</category>
+        
+        <category>wizard</category>
+        
+        <category>level4</category>
+        
+        <category>evocation</category>
+        
+        
+        <category>spells</category>
+        
+      </item>
+    
+      <item>
+        <title>Melf&#39;s Minute Meteors</title>
+        <description>&lt;p&gt;&lt;strong&gt;3rd-level evocation&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Casting Time&lt;/strong&gt;: 1 action&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Range&lt;/strong&gt;: Self&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Components&lt;/strong&gt;: V, S, M (niter, sulfur, and pine tar formed into a bead)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Duration&lt;/strong&gt;: Concentration, up to 10 minutes&lt;/p&gt;
+
+&lt;p&gt;You create six tiny meteors in your space. They float in the air and orbit you for the spell’s duration. When you cast the spell – and as a bonus action on each of your turns thereafter – you can expend one or two of the meteors, sending them streaking toward a point or points you choose within 120 feet of you. Once a meteor reaches its destination or impacts against a solid surface, the meteor explodes. Each creature within 5 feet of the point where the meteor explodes must make a Dexterity saving throw. A creature takes 2d6 fire damage on a failed save, or half as much damage on a successful one.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;At Higher Levels.&lt;/strong&gt; When you cast this spell using a spell slot of 4th level or higher, the number of meteors created increases by two for each slot level above 3rd.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 20 Nov 2015 00:00:00 -0800</pubDate>
+        <link>http://ephe.github.io/grimoire/spells/melfs-minute-meteors</link>
+        <guid isPermaLink="true">http://ephe.github.io/grimoire/spells/melfs-minute-meteors</guid>
+        
+        <category>sorcerer</category>
+        
+        <category>wizard</category>
+        
+        <category>level3</category>
+        
+        <category>evocation</category>
+        
+        
+        <category>spells</category>
+        
+      </item>
+    
+      <item>
+        <title>Immolation</title>
+        <description>&lt;p&gt;&lt;strong&gt;5th-level evocation&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Casting Time&lt;/strong&gt;: 1 action&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Range&lt;/strong&gt;: 90 feet&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Components&lt;/strong&gt;: V&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Duration&lt;/strong&gt;: Concentration, up to 1 minute&lt;/p&gt;
+
+&lt;p&gt;Flames wreathe one creature you can see within range. The target must make a Dexterity saving throw. It takes 7d6 fire damage on a failed save, or half as much damage on a successful one. On a failed save, the target also burns for the spell’s duration. The burning target sheds bright light in a 30-foot radius and dim light for an additional 30 feet. At the end of each of its turns, the target repeats the saving throw. It takes 3d6 fire damage on a failed save, and the spell ends on a successful one. These magical flames can’t be extinguished through nonmagical means.&lt;/p&gt;
+
+&lt;p&gt;If damage from this spell reduces a target to 0 hit points, the target is turned to ash.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 20 Nov 2015 00:00:00 -0800</pubDate>
+        <link>http://ephe.github.io/grimoire/spells/immolation</link>
+        <guid isPermaLink="true">http://ephe.github.io/grimoire/spells/immolation</guid>
+        
+        <category>sorcerer</category>
+        
+        <category>wizard</category>
+        
+        <category>level5</category>
+        
+        <category>evocation</category>
+        
+        
+        <category>spells</category>
+        
+      </item>
+    
+      <item>
+        <title>Abi Dalzim&#39;s Horrid Wilting</title>
+        <description>&lt;p&gt;&lt;strong&gt;8th-level necromancy&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Casting Time&lt;/strong&gt;: 1 action&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Range&lt;/strong&gt;: 150 feet&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Components&lt;/strong&gt;: V, S, M (a bit of sponge)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Duration&lt;/strong&gt;: Instantaneous&lt;/p&gt;
+
+&lt;p&gt;You draw the moisture from every creature in a 30-foot cube centered on a point you choose within range. Each creature in that area must make a Constitution saving throw. Constructs and undead aren’t affected, and plants and water elementals make this saving throw with disadvantage. A creature takes 10d8 necrotic damage on a failed save, or half as much damage on a successful one.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 20 Nov 2015 00:00:00 -0800</pubDate>
+        <link>http://ephe.github.io/grimoire/spells/abi-dalzims-horrid-wilting</link>
+        <guid isPermaLink="true">http://ephe.github.io/grimoire/spells/abi-dalzims-horrid-wilting</guid>
+        
+        <category>sorcerer</category>
+        
+        <category>wizard</category>
+        
+        <category>level8</category>
+        
+        <category>necromancy</category>
+        
+        
+        <category>spells</category>
+        
+      </item>
+    
   </channel>
 </rss>
