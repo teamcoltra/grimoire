@@ -225,6 +225,7 @@ dl.schools-list {
         a {
             color: $grey-color-dark;
             border-radius: 4px;
+            cursor: pointer;
         }
         a.selected {
             color: $brand-color;
